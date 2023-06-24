@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Musical Instrument Shopping Cart</title>  
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <div class="logo">
+                Strings<span>Bob</span>
+            </div>
+            <ul>
+                <li class="active"><i class="fa-solid fa-house"></i>Home</li>
+                <li><i class="fa-solid fa-user"></i>User</li>
+                <li><i class="fa-solid fa-heart"></i>Favourites</li>
+            </ul>
+        </div>
+        <div class="center">
+            <div class="search">
+                <div class="form">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search...">
+                    <button>Search</button>
+                </div>
+            </div>
+            <h2>PRODUCTS</h2>
+            <div class="list">
+                <div class="item" data-key="1">
+                    <div class="img">
+                        <img src="images/acousticguitar.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Acoustic Guitar</div>
+                        <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laboriosam id eveniet voluptatibus minima nulla?</div>
+                    </div>
+                    <div class="price" data-original-price="50">$50.00</div>
+                    <div class="signs">
+                        <button onclick="Subtract(event)">-</button>
+                        <input  class="count" min="1" value="1">
+                        <button onclick="Addition(event)">+</button> 
+                    </div>
+                    
+                    <button class="add">Add To Cart</button>
+                    <button class="remove" onclick = "Remove(1)"><i class="fa-solid fa-trash"></i></button>
+                    <div class="favour" onclick="Change()">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    
+                </div>
+
+                <div class="item" data-key="2">
+                    <div class="img">
+                        <img src="images/bassguitar.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Bass Guitar</div>
+                        <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laboriosam id eveniet voluptatibus minima nulla?</div>
+                    </div>
+                    <div class="price" data-original-price="50">$50.00</div>
+                    <div class="signs">
+                        <button onclick="Subtract(event)">-</button>
+                        <input type="number" class="count" min="1" value="1">
+                        <button onclick="Addition(event)">+</button> 
+                    </div>
+                    <button class="add">Add To Cart</button>
+                    <button class="remove" onclick = "Remove(2)"><i class="fa-solid fa-trash"></i></button>
+                    <div class="favour" onclick="Change()">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    
+                </div>
+
+                <div class="item" data-key="3">
+                    <div class="img">
+                        <img src="images/electricguitar.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Lead Guitar</div>
+                        <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laboriosam id eveniet voluptatibus minima nulla?</div>
+                    </div>
+                    <div class="price" data-original-price="50">$50.00</div>
+                    <div class="signs">
+                        <button onclick="Subtract(event)">-</button>
+                        <input type="number" class="count" min="1" value="1">
+                        <button onclick="Addition(event)">+</button> 
+                    </div>
+                    <button class="add">Add To Cart</button>
+                    <button class="remove" onclick = "Remove(3)"><i class="fa-solid fa-trash"></i></button>
+                    <div class="favour" onclick="Change()">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    
+                </div>
+
+                <div class="item" data-key="4">
+                    <div class="img">
+                        <img src="images/drumpad.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Drumpad</div>
+                        <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laboriosam id eveniet voluptatibus minima nulla?</div>
+                    </div>
+                    <div class="price" data-original-price="50">$50.00</div>
+                    <div class="signs">
+                        <button onclick="Subtract(event)">-</button>
+                        <input type="number" class="count" min="1" value="1">
+                        <button onclick="Addition(event)">+</button> 
+                    </div>
+                    <button class="add">Add To Cart</button>
+                    <button class="remove" onclick = "Remove(4)"><i class="fa-solid fa-trash"></i></button>
+                    <div class="favour" onclick="Change()">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    
+                </div>
+                
+                <div class="item" data-key="5">
+                    <div class="img">
+                        <img src="images/drumset.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Full Drumset</div>
+                        <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laboriosam id eveniet voluptatibus minima nulla?</div>
+                    </div>
+                    <div class="price" data-original-price="50">$50.00</div>
+                    <div class="signs">
+                        <button onclick="Subtract(event)">-</button>
+                        <input type="number" class="count" min="1" value="1">
+                        <button onclick="Addition(event)">+</button> 
+                    </div>
+                    <button class="add">Add To Cart</button>
+                    <button class="remove" onclick = "Remove(5)"><i class="fa-solid fa-trash"></i></button>
+                    <div class="favour" onclick="Change()">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    
+                </div>
+
+                <div class="item" data-key="6">
+                    <div class="img">
+                        <img src="images/guitaramp.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Guitar Amp</div>
+                        <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laboriosam id eveniet voluptatibus minima nulla?</div>
+                    </div>
+                    <div class="price" data-original-price="50">$50.00</div>
+                    <div class="signs">
+                        <button onclick="Subtract(event)">-</button>
+                        <input type="number" class="count" min="1" value="1">
+                        <button onclick="Addition(event)">+</button> 
+                    </div>
+                    <button class="add">Add To Cart</button>
+                    <button class="remove" onclick = "Remove(6)"><i class="fa-solid fa-trash"></i></button>
+                    <div class="favour" onclick="Change()">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    
+                </div>
+                <div class="item" data-key="7">
+                    <div class="img">
+                        <img src="images/guitareffect.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Guitar Effect</div>
+                        <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laboriosam id eveniet voluptatibus minima nulla?</div>
+                    </div>
+                    <div class="price" data-original-price="50">$50.00</div>
+                    <div class="signs">
+                        <button onclick="Subtract(event)">-</button>
+                        <input type="number" class="count" min="1" value="1">
+                        <button onclick="Addition(event)">+</button> 
+                    </div>
+                    <button class="add">Add To Cart</button>
+                    <button class="remove" onclick = "Remove(7)"><i class="fa-solid fa-trash"></i></button>
+                    <div class="favour" onclick="Change()">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    
+                </div>
+
+                <div class="item" data-key="8">
+                    <div class="img">
+                        <img src="images/keyboard.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Yamaha Genos</div>
+                        <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laboriosam id eveniet voluptatibus minima nulla?</div>
+                    </div>
+                    <div class="price" data-original-price="50">$50.00</div>
+                    <div class="signs">
+                        <button onclick="Subtract(event)">-</button>
+                        <input type="number" class="count" min="1" value="1">
+                        <button onclick="Addition(event)">+</button> 
+                    </div>
+                    <button class="add">Add To Cart</button>
+                    <button class="remove" onclick = "Remove(8)"><i class="fa-solid fa-trash"></i></button>
+                    <div class="favour" onclick="Change()">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    
+                </div>
+
+                <div class="item" data-key="9">
+                    <div class="img">
+                        <img src="images/midikeyboard.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Midi Keyboard</div>
+                        <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laboriosam id eveniet voluptatibus minima nulla?</div>
+                    </div>
+                    <div class="price" data-original-price="50">$50.00</div>
+                    <div class="signs">
+                        <button onclick="Subtract(event)">-</button>
+                        <input type="number" class="count" min="1" value="1">
+                        <button onclick="Addition(event)">+</button> 
+                    </div>
+                    <button class="add">Add To Cart</button>
+                    <button class="remove" onclick = "Remove(9)"><i class="fa-solid fa-trash"></i></button>
+                    <div class="favour" onclick="Change()">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    
+                </div>
+                <!-- </div> -->
+            </div>
+        </div>
+
+        <div class="cart">
+            <div class="name">
+                <p1>Cart</p1>
+            </div>
+            <div class="listCart"></div>
+        </div>
+    </div>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>

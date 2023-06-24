@@ -1,0 +1,325 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&display=swap');
+:root{
+    --white: #fff;
+    --light: #eeeded;
+    --orange: rgb(158, 96, 10);
+}
+
+body{
+    background: linear-gradient(90deg, rgb(85, 69, 95) 0%, rgba(52,60,64,1) 64%, rgb(53, 37, 15) 100%);font-family:'Permanent Marker', cursive;
+    height: 100vh;
+}
+
+.container{
+    width: 1450px;
+    height: 70vh;
+    box-shadow:20px 20px 20px #000;
+    -webkit-box-shadow:20px 20px 20px #000;
+    -moz-box-shadow: 20px 20px 20px #000;
+    border: 1px solid var(--white);
+    max-width: 100%;
+    margin: 50px 100px 200px 300px;
+    display: grid;
+    grid-template-columns: 200px 900px 350px;
+    border-radius: 30px;
+    min-height: 80vh; 
+    position: fixed;
+    overflow: hidden;
+    
+}
+
+.container .menu{
+    background-color: var(--white);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.container .cart{
+    background-color: var(--white);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.container .center{
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--light);
+    border-left: 1px solid var(--light);
+    border-right: 1px solid var(--light);
+   /* overflow: scroll; */
+   text-overflow: inherit;
+}
+/* Menu */
+.menu .logo{
+    padding: 20px;
+    font-family: 'Kablammo', cursive;
+    font-size: 30px;
+    height: 40px;
+    color: purple;
+}
+
+.menu .logo span{
+    color: var(--orange)
+}
+.menu ul{
+    padding: 20px 0 20px 20px;
+    list-style: none;
+}
+.menu ul li{
+    padding: 10px 0;
+}
+.menu ul li i{
+    margin-right: 12px;
+}
+.menu ul li.active{
+    color: var(--orange);
+    border-right: 2px solid var(--orange);
+}
+.menu ul li:hover{
+    color: var(--orange);
+}
+/* End menu */
+
+/* Center */  
+   /* form */
+.container .search{
+    background-color: var(--white);
+    padding: 20px;
+    height: 40px;
+}
+
+.center {
+    overflow: scroll;
+}
+
+.center .search .form{
+    width: max-content;
+    border: 1px solid var(--light);
+    border-radius: 20px;
+    padding-left: 15px;
+    color: var(--light);
+}
+.center .search .form input{
+    border: none;
+    padding: 0 10px;
+    outline: none;
+    width: 100px;
+}
+.center .search .form button{
+    border: none;
+    background-color: var(--orange);
+    color: var(--light);
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+   /* endform */
+
+.center h2{
+    padding: 20px;
+}
+.center .list{
+    box-sizing: border-box;
+    padding: 0 20px 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.item{
+    margin: 2px;
+    background-color: var(--white);
+    display: grid;
+    grid-template-columns: 20% auto;
+    padding: 10px 2px 5px 10px;
+    column-gap: 20px;
+    border-radius: 20px;
+}
+
+
+.item .img img{
+    height:110px;
+    width: 100px;
+}
+.item .img{
+    width: 100px;
+    background-color: var(--light);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item .content{
+    width: 150px;
+    margin-left: 30px;
+    padding-left:40px ;
+    
+}
+.item .content .title{
+    font-weight: bold;
+}
+.item .content .des{
+    font-size: small;
+    opacity: 0.7;
+    margin-top: 5px;
+}
+
+.item .price{
+    color: var(--orange);
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: small;
+    margin-top: 5px;
+}
+.item .count{
+    width: 50px;
+    margin-left: 10px;
+    border-radius: 20px;
+    margin-right: 10px;
+    padding: 3px 5px;
+    outline: none;
+    border: 1px solid var(--light);
+    margin-top: 5px;
+}
+.item  .add{
+    width: 100px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--orange);
+    color: var(--white);
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.item .signs{
+    margin: auto;
+}
+
+.item  .remove{
+    width: 20px;
+    height: 40px;
+    padding: 5px;
+    border: none;
+    margin-top: 5px;
+    border-radius: 10px;
+    display: none;
+}
+
+.item .favour {
+    font-size: large;
+    box-sizing: border-box;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+/* End Center */
+.cart{
+    overflow: scroll;
+    display: inline;
+    
+}
+
+.cart .item{
+    transition: 0.5s;
+    border-bottom: 1px solid var(--light);
+}
+
+.cart .name p1{
+    padding: 20px;
+    height: 40px;
+    font-weight: bold;
+    font-size: xx-large;
+    border-bottom: 1px solid var(--light);
+}
+.cart .name .toPrice{
+    color: var(--orange);
+    font-size: 15px;
+}
+.danger{
+    box-shadow: 0 10px 10px var(--orange);
+    transform: translate(0,-10px);
+}
+.cart .add{
+    display: none;
+}
+.cart .remove{
+    display: inline-block!important;
+}
+
+/* My media querry is not constant */
+
+@media(max-width:1024px){
+
+    .container{
+        width: 830px;
+        height: 70px;
+        margin-top: 25px;
+        padding: 0;
+        
+    }
+    .container .menu{
+        width:200.1px;
+        height: 51.3rem;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: small;
+    }
+    .menu .logo{
+        padding: 20px;
+        font-size: 21px;
+    }
+    .container .center{
+        width: 330px;
+        height: 51.3rem;
+        display: flex;
+        flex-direction: column;
+        font-size: small;
+
+    }
+    .center .list{
+        display: inline;
+        overflow: scroll;
+        row-gap: 20px;
+    }
+    
+}
+
+@media(max-width:1080px){
+
+    .container{
+        width: 830px;
+        height: 70px;
+        margin-top: 25px;
+        padding: 0;
+        
+    }
+    .container .menu{
+        width:200.1px;
+        height: 51.3rem;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: small;
+    }
+    .menu .logo{
+        padding: 20px;
+        font-size: 21px;
+    }
+    .container .center{
+        width: 330px;
+        height: 51.3rem;
+        display: flex;
+        flex-direction: column;
+        font-size: small;
+
+    }
+    .center .list{
+        display: inline;
+        overflow: scroll;
+        row-gap: 20px;
+    }
+    
+}
